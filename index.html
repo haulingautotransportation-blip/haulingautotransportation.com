@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hauling Auto Transportation — Philadelphia, PA</title>
+  <meta name="description" content="Affordable, safe and efficient vehicle transportation in Philadelphia — open car transport, door-to-door delivery, motorcycle shipping." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <style>
+    :root{
+      --blue:#0b74d1;
+      --navy:#0b3a66;
+      --muted:#6b7280;
+      --bg:#f7fbff;
+      --card:#ffffff;
+      --accent:#0b74d1;
+      --radius:12px;
+      --maxw:1000px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--bg),#eef6ff);
+      color:#0f1724;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+    }
+    .container{max-width:var(--maxw);margin:28px auto;padding:20px;}
+    header{
+      display:flex;align-items:center;justify-content:space-between;gap:16px;
+      background:rgba(255,255,255,0.9);padding:18px;border-radius:14px;box-shadow:0 6px 18px rgba(11,58,102,0.06);
+    }
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{
+      width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--blue),var(--navy));
+      display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:18px;
+      box-shadow:0 4px 14px rgba(11,58,102,0.12)
+    }
+    h1{margin:0;font-size:20px}
+    .tag{color:var(--muted);font-size:13px}
+    .contact{display:flex;gap:12px;align-items:center}
+    .btn{
+      background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600;
+      box-shadow:0 6px 18px rgba(11,58,102,0.12);
+    }
+    main{margin-top:22px;display:grid;grid-template-columns:1fr 360px;gap:24px}
+    @media(max-width:880px){main{grid-template-columns:1fr;padding:0} .contact{display:none}}
+    .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(11,58,102,0.04)}
+    .hero{
+      padding:28px;border-radius:12px;background:linear-gradient(180deg,rgba(11,58,102,0.06),rgba(11,58,102,0.02));
+      display:flex;flex-direction:column;gap:10px;
+    }
+    .hero h2{font-size:26px;margin:0}
+    .hero p{margin:0;color:var(--muted)}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+    @media(max-width:720px){.services{grid-template-columns:1fr}}
+    .service{padding:14px;border-radius:10px;background:#fff;border:1px solid rgba(11,58,102,0.04);text-align:center}
+    .service h3{margin:6px 0;font-size:16px}
+    .about{margin-top:16px}
+    .about p{color:var(--muted);margin:0 0 12px 0}
+    .quote-form input,.quote-form textarea, .quote-form select{
+      width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef8;background:#fbfdff;margin-bottom:10px;font-size:15px;
+    }
+    .quote-form label{font-weight:600;font-size:13px;color:#0b3a66;margin-bottom:6px;display:block}
+    .small{font-size:13px;color:var(--muted)}
+    .side-card{position:sticky;top:20px}
+    .phone{font-weight:700;color:var(--navy)}
+    footer{margin-top:26px;text-align:center;color:var(--muted);font-size:13px}
+    .success{display:none;padding:12px;border-radius:8px;background:#e6f7ee;color:#0b5b2a;margin-bottom:10px}
+    .row{display:flex;gap:12px}
+    @media(max-width:520px){.row{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">HAT</div>
+        <div>
+          <h1>Hauling Auto Transportation</h1>
+          <div class="tag">Affordable • Secure • On-time — Philadelphia, PA</div>
+        </div>
+      </div>
+      <div class="contact">
+        <div style="text-align:right">
+          <div class="small">Call or Text</div>
+          <div class="phone">(267) 367-3423</div>
+          <div class="small">info@haulingautotransportation.com</div>
+        </div>
+        <a class="btn" href="#quote">Get a Quote</a>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="card hero">
+          <h2>Reliable vehicle transportation — tailored to your needs</h2>
+          <p>We transport cars and motorcycles safely and affordably across the East Coast. Door-to-door options and transparent pricing for both personal and commercial transports.</p>
+
+          <div class="services" aria-hidden="false">
+            <div class="service">
+              <strong>Open Car Transport</strong>
+              <h3>Cost-effective & reliable</h3>
+              <p class="small">Best for standard vehicle transport across long distances.</p>
+            </div>
+            <div class="service">
+              <strong>Door-to-Door Delivery</strong>
+              <h3>Convenient & secure</h3>
+              <p class="small">We pick up and deliver to exact addresses — no extra trips needed.</p>
+            </div>
+            <div class="service">
+              <strong>Motorcycle Shipping</strong>
+              <h3>Special care & strapped safely</h3>
+              <p class="small">Motorcycle racks and protective packaging included.</p>
+            </div>
+          </div>
+
+          <div class="about card" style="margin-top:18px">
+            <h3>About Us</h3>
+            <p>Hauling Auto Transportation is a Philadelphia-based vehicle transport company committed to safe, punctual, and transparent service. Our experienced drivers and carefully-maintained carriers ensure your vehicle arrives in the same condition it was entrusted to us.</p>
+            <p class="small"><strong>Hours:</strong> Mon–Sat, 8AM–8PM • <strong>Phone:</strong> (267) 367-3423</p>
+          </div>
+        </div>
+
+        <div style="margin-top:18px" class="card">
+          <h3>Why choose us?</h3>
+          <ul style="margin:8px 0 0 18px;color:var(--muted)">
+            <li>Transparent pricing with no hidden fees</li>
+            <li>Professional drivers and insured transport</li>
+            <li>Real-time updates and GPS tracking on request</li>
+          </ul>
+        </div>
+      </section>
+
+      <aside>
+        <div class="side-card card">
+          <h3 id="quote">Get a Free Quote</h3>
+          <div class="small">Complete the form below — we’ll reply within one business day.</div>
+
+          <div id="success" class="success">Thank you! Your quote request was sent. We will contact you soon.</div>
+
+          <!-- Netlify form attributes used. If you host on Netlify, submissions appear in the Netlify dashboard.
+               If NOT using Netlify, replace the form action with a Formspree endpoint or keep mailto fallback JS. -->
+          <form class="quote-form" name="quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleSubmit(event)">
+            <input type="hidden" name="form-name" value="quote" />
+            <p style="display:none"><label>Don’t fill: <input name="bot-field" /></label></p>
+
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" required placeholder="John Doe" />
+
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" required placeholder="(267) 367-3423" />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com" />
+
+            <label for="pickup">Pickup city / ZIP</label>
+            <input id="pickup" name="pickup" type="text" required placeholder="Philadelphia, PA" />
+
+            <label for="delivery">Delivery city / ZIP</label>
+            <input id="delivery" name="delivery" type="text" required placeholder="e.g., Miami, FL" />
+
+            <label for="vehicle">Vehicle type</label>
+            <select id="vehicle" name="vehicle">
+              <option>Standard car (sedan/SUV)</option>
+              <option>Luxury / Classic car (enclosed)</option>
+              <option>Motorcycle</option>
+              <option>Other</option>
+            </select>
+
+            <label for="message">Additional details (dates, insurance requests)</label>
+            <textarea id="message" name="message" rows="4" placeholder="Preferred pickup date, special instructions..."></textarea>
+
+            <div style="display:flex;gap:8px;margin-top:8px">
+              <button type="submit" class="btn" style="flex:1">Request Quote</button>
+              <a class="btn" href="tel:+12673673423" style="background:#1b6fb4;padding:10px 12px;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;border-radius:10px">Call Now</a>
+            </div>
+
+            <p class="small" style="margin-top:10px">By submitting you agree to be contacted regarding your transport request. Privacy respected — we do not sell your info.</p>
+          </form>
+
+          <hr style="margin:14px 0;border:none;border-top:1px solid #eef6ff"/>
+
+          <div>
+            <div class="small">Address</div>
+            <div style="font-weight:700">Philadelphia, PA</div>
+            <div class="small" style="margin-top:8px">Email: <a href="mailto:info@haulingautotransportation.com">info@haulingautotransportation.com</a></div>
+            <div class="small">Phone: <a href="tel:+12673673423">(267) 367-3423</a></div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Hauling Auto Transportation — All rights reserved.
+    </footer>
+  </div>
+
+<script>
+  // Populate year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Form submit handler: works with Netlify forms. Also provides a mailto fallback if not hosted.
+  function handleSubmit(e){
+    e.preventDefault();
+    const form = e.target;
+    const data = new FormData(form);
+
+    // If Netlify forms are active (hosted on Netlify), the POST will be captured automatically.
+    // We still use fetch to submit so we can show success message regardless.
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(Array.from(data.entries())).toString()
+    }).then(() => {
+      document.getElementById('success').style.display = 'block';
+      form.reset();
+    }).catch(() => {
+      // Fallback: open user's email client with form data (not ideal, but works without backend)
+      const subject = encodeURIComponent("Quote request from website");
+      let body = "";
+      for (let pair of data.entries()) {
+        body += `${pair[0]}: ${pair[1]}\n`;
+      }
+      const mailto = `mailto:info@haulingautotransportation.com?subject=${subject}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailto;
+    });
+  }
+</script>
+</body>
+</html>
