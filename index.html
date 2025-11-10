@@ -1,60 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Hauling Auto Transportation — Philadelphia, PA</title>
-  <meta name="description" content="Affordable, safe and efficient vehicle transportation services in Philadelphia, PA. Reliable car, motorcycle, and door-to-door delivery." />
+  <meta name="description" content="Affordable, safe and efficient vehicle transportation in Philadelphia — open car transport, door-to-door delivery, motorcycle shipping." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="brand">
-      <div class="logo">HAT</div>
-      <div>
-        <h1>Hauling Auto Transportation</h1>
-        <p class="tagline">Reliable Vehicle Shipping Across the U.S.</p>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">HAT</div>
+        <div>
+          <h1>Hauling Auto Transportation</h1>
+          <div class="tag">Affordable • Secure • On-time — Philadelphia, PA</div>
+        </div>
       </div>
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="terms.html">Terms</a>
-      <a href="privacy.html">Privacy</a>
-      <a class="call-btn" href="tel:+12673673423">📞 (267) 367-3423</a>
-    </nav>
-  </header>
+      <div class="contact">
+        <a href="tel:+12673673423" class="phone">(267) 367-3423</a>
+        <a href="mailto:info@haulingautotransportation.com" class="email">info@haulingautotransportation.com</a>
+        <a href="services.html" class="btn">Get a Quote</a>
+      </div>
+    </header>
 
-  <main class="container">
-    <section class="intro">
-      <h2>Professional Vehicle Transportation</h2>
+    <main>
+      <section class="card">
+        <h2>Reliable vehicle transportation — tailored to your needs</h2>
+        <p>
+          We transport cars and motorcycles safely and affordably across the East Coast.
+          Door-to-door options and transparent pricing for both personal and commercial transports.
+        </p>
+        <div class="features">
+          <div class="feature">
+            <h3>Open Car Transport</h3>
+            <p>Cost-effective & reliable — best for standard vehicles over long distances.</p>
+          </div>
+          <div class="feature">
+            <h3>Door-to-Door Delivery</h3>
+            <p>Convenient & secure — no terminal drop-off required.</p>
+          </div>
+          <div class="feature">
+            <h3>Motorcycle Shipping</h3>
+            <p>Special care & strapped safely — protective packaging included.</p>
+          </div>
+        </div>
+      </section>
+
+      <aside class="card quote">
+        <h3>Get a Free Quote</h3>
+        <p>Complete the form below — we’ll reply within one business day.</p>
+        <form>
+          <label>Full name</label>
+          <input type="text" placeholder="John Doe" required>
+          <label>Phone</label>
+          <input type="tel" placeholder="(267) 367-3423" required>
+          <label>Email</label>
+          <input type="email" placeholder="you@example.com" required>
+          <label>Pickup city / ZIP</label>
+          <input type="text" placeholder="Philadelphia, PA" required>
+          <label>Delivery city / ZIP</label>
+          <input type="text" placeholder="e.g. Miami, FL" required>
+          <label>Vehicle type</label>
+          <select>
+            <option>Standard car (sedan/SUV)</option>
+            <option>Motorcycle</option>
+            <option>Truck or van</option>
+          </select>
+          <label>Additional details</label>
+          <textarea placeholder="Preferred pickup date, special instructions..."></textarea>
+          <button type="submit">Request Quote</button>
+        </form>
+      </aside>
+    </main>
+
+    <section class="card about">
+      <h3>About Us</h3>
       <p>
-        We provide affordable, secure, and efficient auto transport services designed to meet your needs. 
-        Whether you need to move a personal car, a classic vehicle, or a motorcycle, we ensure it arrives safely and on time.
+        Hauling Auto Transportation is a Philadelphia-based vehicle transport company committed
+        to safe, punctual, and transparent service. Our experienced drivers and carefully-maintained
+        carriers ensure your vehicle arrives in the same condition it was entrusted to us.
       </p>
-      <a class="btn" href="tel:+12673673423">Get a Quote</a>
+      <p><strong>Hours:</strong> Mon–Sat, 8AM–8PM &nbsp; • &nbsp; <strong>Phone:</strong> (267) 367-3423</p>
     </section>
 
-    <section class="services">
-      <h3>Our Core Services</h3>
-      <ul>
-        <li>🚗 Open Car Transport</li>
-        <li>🏍️ Motorcycle Shipping</li>
-        <li>🚚 Door-to-Door Delivery</li>
-      </ul>
-    </section>
-
-    <section class="contact">
-      <h3>Contact Us</h3>
-      <p><strong>Phone:</strong> (267) 367-3423</p>
-      <p><strong>Email:</strong> info@haulingautotransportation.com</p>
-      <p><strong>Location:</strong> Philadelphia, PA</p>
-      <p><strong>Business Hours:</strong> Mon–Sat, 8AM–8PM</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Hauling Auto Transportation. All rights reserved.</p>
-  </footer>
+    <footer>
+      © 2025 Hauling Auto Transportation. All rights reserved.
+    </footer>
+  </div>
 </body>
 </html>
