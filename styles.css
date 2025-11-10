@@ -28,6 +28,13 @@ header {
   text-align: center;
 }
 
+header .brand .logo {
+  max-width: 180px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
 header .brand h1 {
   margin: 0;
   font-size: 2rem;
