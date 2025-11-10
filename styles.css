@@ -1,82 +1,119 @@
+/* Base styles */
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f8f9fa;
+  background: #f7fbff; /* lighter, softer background to match your brand colors */
   margin: 0;
   padding: 0;
-  color: #222;
+  color: #0f1724; /* dark navy text for better readability */
+  line-height: 1.5;
 }
+
+/* Header styles */
 header {
-  background: #004aad;
+  background: #0b74d1; /* your brand blue */
   color: #fff;
-  padding: 2rem 1rem 1rem 1rem;
+  padding: 1.5rem 1rem;
   text-align: center;
+  box-shadow: 0 4px 12px rgba(11, 58, 102, 0.15);
+  border-radius: 0 0 12px 12px;
 }
-nav {
-  margin: 1rem 0;
-  text-align: center;
-}
-nav a {
-  color: #004aad;
-  text-decoration: none;
-  margin: 0 1rem;
-  font-weight: bold;
-}
-nav a:hover {
-  text-decoration: underline;
-}
-main {
-  max-width: 700px;
-  margin: 2rem auto;
-  background: #fff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
-footer {
-  margin-top: 2rem;
-  text-align: center;
-  color: #777;
-  font-size: 0.96em;
-}
-/* ===== Navigation & Branding ===== */
+
+/* Branding */
 .brand h1 {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  font-weight: 700;
   color: #fff;
 }
 
 .brand p {
   margin: 0.3rem 0 1rem;
   font-size: 1rem;
-  color: #dbeafe;
+  color: #dbeafe; /* lighter blue text */
 }
 
+/* Navigation */
 nav {
   margin: 1rem 0;
   text-align: center;
 }
 
 nav a {
-  color: #004aad;
+  color: #0b74d1;
   text-decoration: none;
   margin: 0 1rem;
   font-weight: 600;
-  transition: color 0.2s ease;
+  transition: color 0.25s ease;
+  font-size: 1rem;
 }
 
-nav a:hover {
-  color: #007bff;
+nav a:hover,
+nav a:focus {
+  color: #073d99; /* a slightly darker blue on hover/focus */
+  text-decoration: underline;
 }
 
+/* Special button in nav */
 .quote-btn {
-  background: #004aad;
+  background: #0b74d1;
   color: #fff !important;
   padding: 8px 16px;
-  border-radius: 6px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(11, 58, 102, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.quote-btn:hover,
+.quote-btn:focus {
+  background: #073d99;
+  box-shadow: 0 6px 18px rgba(11, 58, 102, 0.3);
+}
+
+/* Main content area */
+main {
+  max-width: 1000px; /* wider container for your grid layout */
+  margin: 2rem auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(11, 58, 102, 0.06);
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 24px;
+}
+
+@media (max-width: 880px) {
+  main {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  color: #6b7280; /* muted gray */
+  font-size: 0.9rem;
+  padding-bottom: 1rem;
+}
+
+/* Utility classes for small text */
+.small {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* Links inside footer or small text */
+footer a,
+.small a {
+  color: #0b74d1;
   text-decoration: none;
 }
 
-.quote-btn:hover {
-  background: #005eea;
+footer a:hover,
+.small a:hover {
+  text-decoration: underline;
 }
-
