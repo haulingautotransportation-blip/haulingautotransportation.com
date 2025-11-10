@@ -1,119 +1,200 @@
-/* Base styles */
+/* ===== Global Styles ===== */
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f7fbff; /* lighter, softer background to match your brand colors */
+  background: #f8f9fa;
   margin: 0;
   padding: 0;
-  color: #0f1724; /* dark navy text for better readability */
-  line-height: 1.5;
+  color: #222;
+  line-height: 1.6;
 }
 
-/* Header styles */
+a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+/* ===== Container ===== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* ===== Header ===== */
 header {
-  background: #0b74d1; /* your brand blue */
+  background: #004aad;
   color: #fff;
-  padding: 1.5rem 1rem;
+  padding: 2rem 1rem 1rem;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(11, 58, 102, 0.15);
-  border-radius: 0 0 12px 12px;
 }
 
-/* Branding */
-.brand h1 {
+header .brand h1 {
   margin: 0;
   font-size: 2rem;
-  font-weight: 700;
-  color: #fff;
 }
 
-.brand p {
+header .brand p {
   margin: 0.3rem 0 1rem;
   font-size: 1rem;
-  color: #dbeafe; /* lighter blue text */
+  color: #dbeafe;
 }
 
-/* Navigation */
+/* ===== Navigation ===== */
 nav {
   margin: 1rem 0;
-  text-align: center;
 }
 
 nav a {
-  color: #0b74d1;
-  text-decoration: none;
+  color: #fff;
   margin: 0 1rem;
   font-weight: 600;
-  transition: color 0.25s ease;
-  font-size: 1rem;
 }
 
-nav a:hover,
-nav a:focus {
-  color: #073d99; /* a slightly darker blue on hover/focus */
-  text-decoration: underline;
+nav a:hover {
+  color: #ffd700;
 }
 
-/* Special button in nav */
 .quote-btn {
-  background: #0b74d1;
-  color: #fff !important;
+  background: #ffd700;
+  color: #004aad !important;
   padding: 8px 16px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: 700;
-  box-shadow: 0 4px 14px rgba(11, 58, 102, 0.2);
-  transition: background-color 0.3s ease;
+  border-radius: 6px;
 }
 
-.quote-btn:hover,
-.quote-btn:focus {
-  background: #073d99;
-  box-shadow: 0 6px 18px rgba(11, 58, 102, 0.3);
+.quote-btn:hover {
+  background: #ffc107;
 }
 
-/* Main content area */
+/* ===== Main ===== */
 main {
-  max-width: 1000px; /* wider container for your grid layout */
-  margin: 2rem auto;
-  background: #ffffff;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(11, 58, 102, 0.06);
-  display: grid;
-  grid-template-columns: 1fr 360px;
-  gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem 0;
 }
 
-@media (max-width: 880px) {
-  main {
-    grid-template-columns: 1fr;
-    padding: 1rem;
-  }
+/* ===== Sections ===== */
+section {
+  flex: 2;
 }
 
-/* Footer */
+aside {
+  flex: 1;
+  min-width: 280px;
+}
+
+/* ===== Cards ===== */
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.card.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* ===== Services ===== */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.service {
+  flex: 1;
+  min-width: 180px;
+  background: #f1f5f9;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.service h3 {
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Quote Form ===== */
+.quote-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  background: #004aad;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #005eea;
+}
+
+.call-btn {
+  background: #28a745;
+}
+
+.call-btn:hover {
+  background: #218838;
+}
+
+/* ===== Footer ===== */
 footer {
   margin-top: 2rem;
   text-align: center;
-  color: #6b7280; /* muted gray */
+  color: #777;
   font-size: 0.9rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
 }
 
-/* Utility classes for small text */
+/* ===== Typography ===== */
+h2, h3 {
+  color: #004aad;
+}
+
 .small {
-  font-size: 0.875rem;
-  color: #6b7280;
+  font-size: 0.9rem;
 }
 
-/* Links inside footer or small text */
-footer a,
-.small a {
-  color: #0b74d1;
-  text-decoration: none;
+.font-bold {
+  font-weight: 600;
 }
 
-footer a:hover,
-.small a:hover {
-  text-decoration: underline;
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+  }
+
+  .services {
+    flex-direction: column;
+  }
 }
