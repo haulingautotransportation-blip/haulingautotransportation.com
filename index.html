@@ -1,106 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hauling Auto Transportation LLC</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hauling Auto Transportation — Philadelphia, PA</title>
+  <meta name="description" content="Affordable, safe and efficient vehicle transportation services in Philadelphia, PA. Reliable car, motorcycle, and door-to-door delivery." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <!-- Header -->
-    <header>
-      <div class="brand">
-        <img src="images/logo.png" alt="Hauling Auto Transportation Logo" class="logo">
-        <h1>Hauling Auto Transportation LLC</h1>
-        <p>Affordable • Secure • On-time — Philadelphia, PA</p>
+  <header>
+    <div class="brand">
+      <div class="logo">HAT</div>
+      <div>
+        <h1>Hauling Auto Transportation</h1>
+        <p class="tagline">Reliable Vehicle Shipping Across the U.S.</p>
       </div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a class="call-btn" href="tel:+12673673423">📞 (267) 367-3423</a>
+    </nav>
+  </header>
 
-      <!-- Navigation -->
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-        <a href="quote.html" class="quote-btn">Get a Quote</a>
-        <a href="terms.html">Terms</a>
-        <a href="privacy.html">Privacy</a>
-      </nav>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-      <!-- Hero Section -->
-      <section class="card hero">
-        <img src="images/hero-image.jpg" alt="Auto Transportation Service">
-        <h2>Reliable Auto Transportation Services</h2>
-        <p>We provide safe, timely, and affordable auto transport across the United States. Your vehicle is our priority.</p>
-      </section>
-
-      <!-- Services Section -->
-      <section class="services">
-        <div class="service card">
-          <h3>Door-to-Door Transport</h3>
-          <p>We pick up and deliver your vehicle directly to your desired location safely.</p>
-        </div>
-        <div class="service card">
-          <h3>Open Carrier Transport</h3>
-          <p>Affordable and fast, your vehicle will be transported on a standard open carrier.</p>
-        </div>
-        <div class="service card">
-          <h3>Enclosed Carrier Transport</h3>
-          <p>Protect your high-value or classic car with enclosed transport for ultimate safety.</p>
-        </div>
-      </section>
-
-      <!-- Quote Form Section -->
-      <aside class="card quote-form">
-        <h3>Request a Free Quote</h3>
-        <form action="submit-quote.php" method="post">
-          <label for="name">Full Name</label>
-          <input type="text" id="name" name="name" required>
-
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" required>
-
-          <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="phone" required>
-
-          <label for="pickup">Pickup Location</label>
-          <input type="text" id="pickup" name="pickup" required>
-
-          <label for="delivery">Delivery Location</label>
-          <input type="text" id="delivery" name="delivery" required>
-
-          <label for="vehicle">Vehicle Type</label>
-          <select id="vehicle" name="vehicle">
-            <option value="car">Car</option>
-            <option value="truck">Truck</option>
-            <option value="suv">SUV</option>
-          </select>
-
-          <div class="form-buttons">
-            <button type="submit" class="btn">Submit</button>
-            <button type="reset" class="btn call-btn">Reset</button>
-          </div>
-
-          <p class="small">By submitting, you agree to our <a href="terms.html">Terms</a> and <a href="privacy.html">Privacy Policy</a>.</p>
-        </form>
-      </aside>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-      <p>© <span id="year"></span> Hauling Auto Transportation LLC — All rights reserved.</p>
+  <main class="container">
+    <section class="intro">
+      <h2>Professional Vehicle Transportation</h2>
       <p>
-        <a href="terms.html">Terms</a> | 
-        <a href="privacy.html">Privacy Policy</a>
+        We provide affordable, secure, and efficient auto transport services designed to meet your needs. 
+        Whether you need to move a personal car, a classic vehicle, or a motorcycle, we ensure it arrives safely and on time.
       </p>
-    </footer>
-  </div>
+      <a class="btn" href="tel:+12673673423">Get a Quote</a>
+    </section>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+    <section class="services">
+      <h3>Our Core Services</h3>
+      <ul>
+        <li>🚗 Open Car Transport</li>
+        <li>🏍️ Motorcycle Shipping</li>
+        <li>🚚 Door-to-Door Delivery</li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h3>Contact Us</h3>
+      <p><strong>Phone:</strong> (267) 367-3423</p>
+      <p><strong>Email:</strong> info@haulingautotransportation.com</p>
+      <p><strong>Location:</strong> Philadelphia, PA</p>
+      <p><strong>Business Hours:</strong> Mon–Sat, 8AM–8PM</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Hauling Auto Transportation. All rights reserved.</p>
+  </footer>
 </body>
 </html>
