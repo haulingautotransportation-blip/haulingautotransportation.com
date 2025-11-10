@@ -38,3 +38,45 @@ footer {
   color: #777;
   font-size: 0.96em;
 }
+/* ===== Navigation & Branding ===== */
+.brand h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.brand p {
+  margin: 0.3rem 0 1rem;
+  font-size: 1rem;
+  color: #dbeafe;
+}
+
+nav {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+nav a {
+  color: #004aad;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+.quote-btn {
+  background: #004aad;
+  color: #fff !important;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.quote-btn:hover {
+  background: #005eea;
+}
+
