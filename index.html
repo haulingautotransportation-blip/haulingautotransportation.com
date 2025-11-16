@@ -1,43 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Hauling Auto Transportation — Philadelphia, PA</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hauling Auto Transportation LLC</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<nav class="topnav">
-  <a href="index.html" class="active">Home</a>
-  <a href="services.html">Services</a>
-  <a href="terms.html">Terms</a>
-  <a href="privacy.html">Privacy</a>
-</nav>
+    <header class="header">
+        <img src="/images/logo.png" alt="Hauling Auto Transportation Logo" class="logo" />
+        <nav class="nav">
+            <a href="#services">Services</a>
+            <a href="#coverage">Coverage</a>
+            <a href="#request">Request Transport</a>
+        </nav>
+    </header>
 
-<div class="container">
-<header>
-  <div class="brand">
-    <img src="images/logo.png" class="logo-img"/>
-    <div>
-      <h1>Hauling Auto Transportation</h1>
-      <div class="tag">Affordable • Secure • On-time — Philadelphia, PA</div>
-    </div>
-  </div>
-  <div class="contact">
-    <a href="tel:+18889590849" class="phone">(888) 959-0849</a>
-    <a href="mailto:info@haulingautotransportation.com" class="email">info@haulingautotransportation.com</a>
-    <a href="services.html" class="btn">Get a Quote</a>
-  </div>
-</header>
+    <section class="hero" style="background-image: url('/images/pexels-explorealistic-11686439.jpg');">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Reliable Car Hauling Across the East Coast</h1>
+            <p>Your trusted partner for safe and efficient vehicle transport.</p>
+        </div>
+    </section>
 
-<main>
-<section class="card">
-<h2>Reliable vehicle transportation — tailored to your needs</h2>
-<p>We transport cars and motorcycles safely and affordably across the East Coast.</p>
-</section>
-</main>
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <p>We transport vehicles professionally with full insurance and DOT compliance.</p>
+    </section>
 
-<footer>© 2025 Hauling Auto Transportation</footer>
-</div>
+    <section id="coverage" class="coverage">
+        <h2>Our Coverage Areas</h2>
+        <p>We transport from the East Coast to the Gulf Coast and return routes — focusing on areas close to Philadelphia.</p>
+        <ul>
+            <li>Pennsylvania</li>
+            <li>New Jersey</li>
+            <li>New York</li>
+            <li>Delaware</li>
+            <li>Maryland</li>
+            <li>Virginia</li>
+            <li>West Virginia</li>
+            <li>Ohio</li>
+            <li>North Carolina</li>
+            <li>South Carolina</li>
+            <li>Georgia</li>
+            <li>Alabama</li>
+            <li>Mississippi</li>
+            <li>Louisiana</li>
+            <li>Texas</li>
+        </ul>
+    </section>
+
+    <section id="request" class="request">
+        <h2>Request Transport</h2>
+        <form action="https://formsubmit.co/info@haulingautotransportation.com" method="POST" class="request-form">
+            <input type="hidden" name="_subject" value="New Transport Request" />
+
+            <label>Full Name</label>
+            <input type="text" name="Full Name" required />
+
+            <label>Email</label>
+            <input type="email" name="Email" required />
+
+            <label>Phone Number</label>
+            <input type="text" name="Phone Number" required />
+
+            <label>Vehicle Year</label>
+            <input type="text" name="Vehicle Year" required />
+
+            <label>Vehicle Make</label>
+            <input type="text" name="Vehicle Make" required />
+
+            <label>Vehicle Model</label>
+            <input type="text" name="Vehicle Model" required />
+
+            <label>Pickup Location (City & State)</label>
+            <input type="text" name="Pickup Location" required />
+
+            <label>Delivery Location (City & State)</label>
+            <input type="text" name="Delivery Location" required />
+
+            <button type="submit">Submit Request</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Hauling Auto Transportation LLC • Philadelphia, PA</p>
+    </footer>
 </body>
 </html>
