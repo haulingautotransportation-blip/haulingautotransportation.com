@@ -1,5 +1,5 @@
 /* ===========================
-   GLOBAL STYLES
+   GLOBAL
 =========================== */
 * {
   margin: 0;
@@ -15,29 +15,30 @@ body {
 }
 
 /* ===========================
-   HEADER / NAVIGATION
+   HEADER / NAV
 =========================== */
 
-header {
-  background-color: #ffffff;
+.header {
+  background: #ffffff;
   border-bottom: 2px solid #e5e7eb;
   padding: 10px 20px;
+  width: 100%;
 }
 
-.navbar {
+.header-inner {
+  max-width: 1200px;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: auto;
 }
 
-.logo img {
-  height: 70px;         /* ← Adjust logo size here */
+.logo {
+  height: 65px;      /* ← PERFECT SIZE */
   width: auto;
 }
 
-.nav-links a {
+.nav a {
   margin-left: 20px;
   text-decoration: none;
   color: #333;
@@ -45,8 +46,8 @@ header {
   font-size: 1rem;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+.nav a:hover,
+.nav a.active {
   color: #1f6feb;
 }
 
@@ -55,31 +56,41 @@ header {
 =========================== */
 
 .hero {
+  position: relative;
   height: 500px;
-  width: 100%;
-  background: url("images/pexels-explorealistic-11686439.jpg") center/cover no-repeat;
-  border-bottom: 3px solid #1f6feb;
+  background-size: cover;
+  background-position: center;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.hero-content {
+  position: relative;
+  color: white;
   padding: 20px;
 }
 
-.hero h1 {
+.hero-content h1 {
   font-size: 3rem;
-  color: white;
   text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
 }
 
-.hero p {
+.hero-content p {
   font-size: 1.2rem;
   margin-top: 10px;
-  color: #eef0f4;
+  color: #f3f3f3;
 }
 
 /* ===========================
-   CONTENT SECTIONS
+   SECTIONS
 =========================== */
 
 section {
@@ -100,24 +111,25 @@ p {
 }
 
 /* ===========================
-   CITY LIST (SERVICE AREAS)
+   COVERAGE LIST
 =========================== */
 
-.city-list {
+.coverage ul {
+  list-style: none;
   columns: 2;
   column-gap: 40px;
   font-size: 1.1rem;
 }
 
-.city-list li {
+.coverage li {
   margin-bottom: 8px;
 }
 
 /* ===========================
-   CONTACT FORM
+   REQUEST FORM
 =========================== */
 
-.contact-form {
+.request-form {
   background: #ffffff;
   padding: 25px;
   border: 1px solid #e5e7eb;
@@ -126,12 +138,11 @@ p {
   margin: auto;
 }
 
-.contact-form label {
+.request-form label {
   font-weight: bold;
 }
 
-.contact-form input,
-.contact-form textarea {
+.request-form input {
   width: 100%;
   padding: 10px;
   margin-top: 6px;
@@ -140,7 +151,7 @@ p {
   border-radius: 6px;
 }
 
-.contact-form button {
+.request-form button {
   background-color: #1f6feb;
   color: white;
   padding: 12px 20px;
@@ -150,7 +161,7 @@ p {
   cursor: pointer;
 }
 
-.contact-form button:hover {
+.request-form button:hover {
   background-color: #155dc0;
 }
 
@@ -158,7 +169,7 @@ p {
    FOOTER
 =========================== */
 
-footer {
+.footer {
   margin-top: 40px;
   padding: 20px;
   background: #1f6feb;
@@ -167,37 +178,34 @@ footer {
 }
 
 /* ===========================
-   RESPONSIVE DESIGN
+   RESPONSIVE
 =========================== */
 
 @media (max-width: 768px) {
-  .navbar {
+  .header-inner {
     flex-direction: column;
     text-align: center;
+    gap: 10px;
   }
 
-  .nav-links {
-    margin-top: 10px;
-  }
-
-  .nav-links a {
-    display: block;
-    margin: 10px 0;
+  .nav a {
+    display: inline-block;
+    margin: 10px;
   }
 
   .hero {
-    height: 350px;
+    height: 360px;
   }
 
-  .hero h1 {
-    font-size: 2.4rem;
+  .hero-content h1 {
+    font-size: 2.3rem;
   }
 
-  .city-list {
+  .logo {
+    height: 50px;
+  }
+
+  .coverage ul {
     columns: 1;
-  }
-
-  .logo img {
-    height: 55px;
   }
 }
