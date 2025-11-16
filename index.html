@@ -7,16 +7,24 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+    <!-- TOP HEADER + LOGO + NAV -->
     <header class="header">
-        <img src="/images/logo.png" alt="Hauling Auto Transportation Logo" class="logo" />
-        <nav class="nav">
-            <a href="#services">Services</a>
-            <a href="#coverage">Coverage</a>
-            <a href="#request">Request Transport</a>
-        </nav>
+        <div class="header-inner">
+            <img src="images/logo.png" alt="Hauling Auto Transportation Logo" class="logo" />
+            <nav class="nav">
+                <a href="index.html" class="active">Home</a>
+                <a href="services.html">Services</a>
+                <a href="coverage.html">Coverage</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+            </nav>
+        </div>
     </header>
 
-    <section class="hero" style="background-image: url('/images/pexels-explorealistic-11686439.jpg');">
+    <!-- HERO SECTION WITH BACKGROUND -->
+    <section class="hero" style="background-image: url('images/pexels-explorealistic-11686439.jpg');">
         <div class="overlay"></div>
         <div class="hero-content">
             <h1>Reliable Car Hauling Across the East Coast</h1>
@@ -24,14 +32,16 @@
         </div>
     </section>
 
+    <!-- SERVICES -->
     <section id="services" class="services">
         <h2>Our Services</h2>
         <p>We transport vehicles professionally with full insurance and DOT compliance.</p>
     </section>
 
+    <!-- COVERAGE -->
     <section id="coverage" class="coverage">
         <h2>Our Coverage Areas</h2>
-        <p>We transport from the East Coast to the Gulf Coast and return routes — focusing on areas close to Philadelphia.</p>
+        <p>We transport from the East Coast to the Gulf Coast — focused on areas near Philadelphia.</p>
         <ul>
             <li>Pennsylvania</li>
             <li>New Jersey</li>
@@ -51,10 +61,14 @@
         </ul>
     </section>
 
+    <!-- TRANSPORT REQUEST FORM -->
     <section id="request" class="request">
         <h2>Request Transport</h2>
+
         <form action="https://formsubmit.co/info@haulingautotransportation.com" method="POST" class="request-form">
+
             <input type="hidden" name="_subject" value="New Transport Request" />
+            <input type="hidden" name="_captcha" value="false">
 
             <label>Full Name</label>
             <input type="text" name="Full Name" required />
@@ -87,5 +101,6 @@
     <footer class="footer">
         <p>© 2025 Hauling Auto Transportation LLC • Philadelphia, PA</p>
     </footer>
+
 </body>
 </html>
