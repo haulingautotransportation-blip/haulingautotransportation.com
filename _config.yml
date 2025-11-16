@@ -1,3 +1,32 @@
-theme: jekyll-theme-cayman
 title: Hauling Auto Transportation LLC
-description: Reliable Car Hauling & Vehicle Transport Services
+description: Professional Car Hauling & Vehicle Transport Services
+theme: jekyll-theme-cayman
+
+# Navigation menu
+navbar:
+  items:
+    - name: Home
+      link: /
+    - name: Services
+      link: /services.html
+    - name: About
+      link: /about.html
+    - name: Contact
+      link: /contact.html
+    - name: Get a Quote
+      link: /quote.html
+
+# Logo
+logo: /assets/logo.png   # Upload your logo here (assets/logo.png)
+
+# Social links
+social_links:
+  - name: Phone
+    link: "tel:+18889590849"
+  - name: Email
+    link: "mailto:info@haulingautotransportation.com"
+
+# SEO metadata
+google_analytics: false
+plugins:
+  - jekyll-seo-tag
