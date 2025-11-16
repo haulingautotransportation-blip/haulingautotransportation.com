@@ -1,60 +1,203 @@
-:root {
-  --blue: #0b74d1;
-  --navy: #0b3a66;
-  --muted: #6b7280;
-  --bg: #f7fbff;
-  --card: #ffffff;
-  --accent: #0b74d1;
-  --radius: 12px;
-  --maxw: 1100px;
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-}
-
+/* ===========================
+   GLOBAL STYLES
+=========================== */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-  margin: 0;
-  background: linear-gradient(180deg, var(--bg), #eef6ff);
-  color: #0f1724;
+  background: #f7f9fc;
+  color: #333;
   line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-.container {
-  max-width: var(--maxw);
+/* ===========================
+   HEADER / NAVIGATION
+=========================== */
+
+header {
+  background-color: #ffffff;
+  border-bottom: 2px solid #e5e7eb;
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo img {
+  height: 70px;         /* ← Adjust logo size here */
+  width: auto;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #1f6feb;
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero {
+  height: 500px;
+  width: 100%;
+  background: url("images/pexels-explorealistic-11686439.jpg") center/cover no-repeat;
+  border-bottom: 3px solid #1f6feb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #eef0f4;
+}
+
+/* ===========================
+   CONTENT SECTIONS
+=========================== */
+
+section {
+  max-width: 1100px;
   margin: 40px auto;
   padding: 0 20px;
 }
 
-/* ===== HEADER ===== */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #fff;
-  padding: 20px 24px;
-  border-radius: 14px;
-  box-shadow: 0 6px 18px rgba(11, 58, 102, 0.06);
+h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #1f6feb;
 }
 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 14px;
+p {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
 }
 
-.logo {
-  width: 56px;
-  height: 56px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, var(--blue), var(--navy));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-weight: 700;
-  font-size: 18px;
-  box-shadow: 0 4px 14px rgba(11, 58, 1
+/* ===========================
+   CITY LIST (SERVICE AREAS)
+=========================== */
+
+.city-list {
+  columns: 2;
+  column-gap: 40px;
+  font-size: 1.1rem;
+}
+
+.city-list li {
+  margin-bottom: 8px;
+}
+
+/* ===========================
+   CONTACT FORM
+=========================== */
+
+.contact-form {
+  background: #ffffff;
+  padding: 25px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.contact-form button {
+  background-color: #1f6feb;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #155dc0;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background: #1f6feb;
+  color: white;
+  text-align: center;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .hero {
+    height: 350px;
+  }
+
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .city-list {
+    columns: 1;
+  }
+
+  .logo img {
+    height: 55px;
+  }
+}
